@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/main_title"
+        app:titleTextColor="@color/cardview_light_background" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblChampion" />
+
+    <TextView
+        android:id="@+id/lblChampion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Champion"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/lstC"
+        app:layout_constraintEnd_toStartOf="@+id/lblOrigin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/lblCost"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Cost"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblClass" />
+
+    <TextView
+        android:id="@+id/lblOrigin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Origin"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblChampion"
+        app:layout_constraintEnd_toStartOf="@+id/lblClass"
+        app:layout_constraintStart_toEndOf="@+id/lblChampion" />
+
+    <TextView
+        android:id="@+id/lblClass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Class"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblOrigin"
+        app:layout_constraintEnd_toStartOf="@+id/lblCost"
+        app:layout_constraintStart_toEndOf="@+id/lblOrigin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

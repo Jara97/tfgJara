@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainNavigation"
+    android:id="@+id/main_activity">
+
+    <fragment
+        android:id="@+id/mainNavigation"
+        android:name="com.example.tfgjara.fragments.main.MainFragment"
+        android:label="@string/main_title"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/itemsNavigation"
+        android:name="com.example.tfgjara.fragments.main.ItemsFragment"
+        android:label="@string/main_title"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/championNavigation"
+        android:name="com.example.tfgjara.fragments.main.ChampionFragment"
+        android:label="@string/main_title"
+        tools:layout="@layout/champion_fragment" />
+
+
+</navigation>

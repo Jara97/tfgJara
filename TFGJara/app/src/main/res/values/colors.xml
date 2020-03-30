@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="toolbar">#060050</color>
+    <color name="gray">#B1B0C2</color>
+    <color name="blueSoft">#798FFF</color>
+    <color name="sortDescending">#FF84A2</color>
+    <color name="traitEfects">#3F5FFD  </color>
+    <color name="lightblue">#DAEBFA </color>
+
+
+</resources>

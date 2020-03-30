@@ -1,0 +1,416 @@
+[
+  {
+    "key": "Set3_Blademaster",
+    "name": "Blademaster",
+    "description": "Blademasters' Basic Attacks have a chance to trigger two additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "efect": "30% Chance to trigger",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "efect": "55% Chance to trigger",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Blaster",
+    "name": "Blaster",
+    "description": "Every fourth Basic Attack from a Blaster fires additional attacks at random enemies. These additional attacks deal damage like Basic Attacks, trigger on-hit effects, and can critically hit.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "2 Additional Attacks",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "efect": "5 Additional Attacks",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set3_Brawler",
+    "name": "Brawler",
+    "description": "Brawlers gain bonus Maximum Health.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "300 Bonus Health",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "750 Bonus Health"
+      }
+    ]
+  },
+  {
+    "key": "Set3_Celestial",
+    "name": "Celestial",
+    "description": "All allies heal for some of the damage they deal with spells and attacks.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "15% Healing",
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "efect": "30% Healing",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "60% Healing"
+      }
+    ]
+  },
+  {
+    "key": "Chrono",
+    "name": "Chrono",
+    "description": "All allies gain attack speed every few seconds.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "10% Attack Speed",
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "efect": "35% Attack Speed",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "70% Attack Speed"
+      }
+    ]
+  },
+  {
+    "key": "Cybernetic",
+    "name": "Cybernetic",
+    "description": "Cybernetic champions with at least one item gain Health and Attack Damage.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "efect": "350 Health & 35 Attack Damage",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "800 Health & 80 Attack Damage"
+      }
+    ]
+  },
+  {
+    "key": "DarkStar",
+    "name": "Dark Star",
+    "description": "When a Dark Star champion dies they give increased damage, plus any previous stacks of this effect, to the nearest ally Dark Star champion.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "efect": "35% Damage Increase",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "80% Damage Increase"
+      }
+    ]
+  },
+  {
+    "key": "Demolitionist",
+    "name": "Demolitionist",
+    "description": "Damage from Demolitionists' spellcasts stuns their targets for a few seconds. (Once per spellcast)",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Infiltrator",
+    "name": "Infiltrator",
+    "innate": "At the start of combat, Infiltrators move to the enemy's backline.",
+    "description": "Infiltrators gain Attack Speed for a few seconds at the start of combat.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "50% Bonus Attack Speed",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "80% Bonus Attack Speed. Refreshes on Takedown."
+      }
+    ]
+  },
+  {
+    "key": "ManaReaver",
+    "name": "Mana-Reaver",
+    "description": "Mana-Reavers' Basic Attacks increase the mana cost of their target's next spellcast by a percentage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "First Attack each Combat",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "All Attacks"
+      }
+    ]
+  },
+  {
+    "key": "MechPilot",
+    "name": "Mech-Pilot",
+    "description": "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its pilots, as well as 3 random items from among them. When the Super-Mech dies the Pilots are ejected, granted Mana, and continue to fight.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Mercenary",
+    "name": "Mercenary",
+    "innate": "Upgrades for Mercenaries' spells have a chance to appear in the shop.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1,
+        "efect": "30% Chance to trigger"
+      }
+    ]
+  },
+  {
+    "key": "Set3_Mystic",
+    "name": "Mystic",
+    "description": "All allies gain Magic Resistance.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "30 Magic Resistance",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "120 Magic Resistance"
+      }
+    ]
+  },
+  {
+    "key": "Protector",
+    "name": "Protector",
+    "description": "Protectors shield themselves for a few seconds whenever they cast a spell. This shield doesn't stack.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "20% Maximum Health Shield",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "35% Maximum Health Shield"
+      }
+    ]
+  },
+  {
+    "key": "Rebel",
+    "name": "Rebel",
+    "description": "At the start of combat, Rebels gain a shield and bonus damage for each adjacent Rebel. The shield lasts for a few seconds.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "efect": "150 Shield & 10% Damage",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "225 Shield & 12% Damage"
+      }
+    ]
+  },
+  {
+    "key": "Sniper",
+    "name": "Sniper",
+    "description": "Snipers deal percentage increased damage for each hex between themselves and their target.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Set3_Sorcerer",
+    "name": "Sorcerer",
+    "description": "All allies have increased Spell Power.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "20% Spell Power",
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "efect": "40% Spell Power",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "80% Spell Power"
+      }
+    ]
+  },
+  {
+    "key": "SpacePirate",
+    "name": "Space Pirate",
+    "description": "Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "50% for 1 Gold",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "50% for 1 Gold and 15% for a component item"
+      }
+    ]
+  },
+  {
+    "key": "StarGuardian",
+    "name": "Star Guardian",
+    "description": "Star Guardians' spellcasts grant Mana to other Star Guardians, spread among them.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "efect": "30 Total Mana",
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "60 Total Mana"
+      }
+    ]
+  },
+  {
+    "key": "Starship",
+    "name": "Starship",
+    "description": "Starships gain mana per second, maneuver around the board, and are immune to movement impairing effects, but can't make Basic Attacks.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Valkyrie",
+    "name": "Valkyrie",
+    "description": "Valkyrie attacks and spells always critically hit targets below a percentage health.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Vanguard",
+    "name": "Vanguard",
+    "description": "Vanguard champions gain bonus Armor.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "60 Armor",
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "250 Armor"
+      }
+    ]
+  },
+  {
+    "key": "Set3_Void",
+    "name": "Void",
+    "description": "Attacks and spells from Void champions deal true damage.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3,
+        "efect": ""
+      }
+    ]
+  }
+]
