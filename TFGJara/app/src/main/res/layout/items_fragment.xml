@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_marginEnd="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarItems"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/items"
+        app:titleTextColor="@color/cardview_light_background" />
+
+    <ImageView
+        android:id="@+id/imgItemAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="3dp"
+        android:background="@color/sortDescending"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemAS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItems"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/imgItemAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemAP"
+        app:layout_constraintStart_toEndOf="@+id/imgItemAD"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItems"
+        app:srcCompat="@drawable/a2" />
+
+    <ImageView
+        android:id="@+id/imgItemAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemMana"
+        app:layout_constraintStart_toEndOf="@+id/imgItemAS"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItems"
+        app:srcCompat="@drawable/a3" />
+
+    <ImageView
+        android:id="@+id/imgItemMana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/ImgItemArmor"
+        app:layout_constraintStart_toEndOf="@+id/imgItemAP"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItems"
+        app:srcCompat="@drawable/a4" />
+
+    <ImageView
+        android:id="@+id/ImgItemArmor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgItemMana"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarItems"
+        app:srcCompat="@drawable/a5" />
+
+    <ImageView
+        android:id="@+id/imgItemMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemHP"
+        app:layout_constraintStart_toEndOf="@+id/imgItemCrit"
+        app:layout_constraintTop_toTopOf="@+id/imgItemCrit"
+        app:srcCompat="@drawable/a6" />
+
+    <ImageView
+        android:id="@+id/imgItemHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemInvisible2"
+        app:layout_constraintStart_toEndOf="@+id/imgItemMR"
+        app:layout_constraintTop_toTopOf="@+id/imgItemS"
+        app:srcCompat="@drawable/a7" />
+
+    <ImageView
+        android:id="@+id/imgItemS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemCrit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgItemAD"
+        app:srcCompat="@drawable/a8" />
+
+    <ImageView
+        android:id="@+id/imgItemCrit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemMR"
+        app:layout_constraintStart_toEndOf="@+id/imgItemS"
+        app:layout_constraintTop_toBottomOf="@+id/imgItemAS"
+        app:srcCompat="@drawable/a9" />
+
+    <ImageView
+        android:id="@+id/imgItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblItemRecipes"
+        app:srcCompat="@drawable/a11" />
+
+    <TextView
+        android:id="@+id/lblItemRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Combined"
+        android:textSize="32dp"
+        android:textColor="@color/traitEfects"
+        app:layout_constraintBottom_toTopOf="@+id/imgItem1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgItemCrit" />
+
+    <ImageView
+        android:id="@+id/imgItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem3"
+        app:layout_constraintStart_toEndOf="@+id/imgItem1"
+        app:layout_constraintTop_toTopOf="@+id/imgItem1"
+        app:srcCompat="@drawable/a12" />
+
+    <ImageView
+        android:id="@+id/imgItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem4"
+        app:layout_constraintStart_toEndOf="@+id/imgItem2"
+        app:layout_constraintTop_toTopOf="@+id/imgItem2"
+        app:srcCompat="@drawable/a13" />
+
+    <ImageView
+        android:id="@+id/imgItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem5"
+        app:layout_constraintStart_toEndOf="@+id/imgItem3"
+        app:layout_constraintTop_toTopOf="@+id/imgItem3"
+        app:srcCompat="@drawable/a14" />
+
+    <ImageView
+        android:id="@+id/imgItem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgItem4"
+        app:layout_constraintTop_toTopOf="@+id/imgItem4"
+        app:srcCompat="@drawable/a15" />
+
+    <ImageView
+        android:id="@+id/imgItem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgItem1"
+        app:srcCompat="@drawable/a16" />
+
+    <ImageView
+        android:id="@+id/imgItem7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem8"
+        app:layout_constraintStart_toEndOf="@+id/imgItem6"
+        app:layout_constraintTop_toTopOf="@+id/imgItem6"
+        app:srcCompat="@drawable/a17" />
+
+    <ImageView
+        android:id="@+id/imgItem8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItem9"
+        app:layout_constraintStart_toEndOf="@+id/imgItem7"
+        app:layout_constraintTop_toTopOf="@+id/imgItem7"
+        app:srcCompat="@drawable/a18" />
+
+    <ImageView
+        android:id="@+id/imgItem9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgItemInvisible"
+        app:layout_constraintStart_toEndOf="@+id/imgItem8"
+        app:layout_constraintTop_toTopOf="@+id/imgItem8"
+        app:srcCompat="@drawable/a19" />
+
+    <ImageView
+        android:id="@+id/imgItemInvisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgItem9"
+        app:layout_constraintTop_toTopOf="@+id/imgItem9"
+        app:srcCompat="@drawable/a99" />
+
+    <ImageView
+        android:id="@+id/imgItemInvisible2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgItemHP"
+        app:layout_constraintTop_toTopOf="@+id/imgItemHP"
+        app:srcCompat="@drawable/a99" />
+
+    <TextView
+        android:id="@+id/lblItemStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:textColor="@color/traitEfects"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemEfect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblItemEfect" />
+
+    <TextView
+        android:id="@+id/lblItemEfect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Efect"
+        android:textColor="@color/traitEfects"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblItemStats"
+        app:layout_constraintTop_toBottomOf="@+id/imgItem8" />
+
+    <ImageView
+        android:id="@+id/imgItemRecipe1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblItemStats"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/imgItemPlus"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imgItemRecipe1"
+        app:layout_constraintTop_toTopOf="@+id/imgItemRecipe1"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/imgItemRecipe2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imgItemPlus"
+        app:layout_constraintTop_toTopOf="@+id/imgItemRecipe1"
+        app:srcCompat="@drawable/a1" />
+
+    <TextView
+        android:id="@+id/lblItemRecipeStats"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="15 Attack damage + 15 Attack damage"
+        android:textColor="@color/lightblue"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemEfectD"
+        app:layout_constraintStart_toEndOf="@+id/imgItemRecipe2"
+        app:layout_constraintTop_toTopOf="@+id/imgItemRecipe2" />
+
+    <TextView
+        android:id="@+id/lblItemEfectD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Whenever the wearer kills or participates in killing an enemy, gain +15 Attack Damage for the remainder of combat. Starts with 1 stack. This effect can stack any number of times."
+        android:textColor="@color/lightblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblItemRecipeStats"
+        app:layout_constraintTop_toBottomOf="@+id/lblItemEfect" />
+
+    <ImageView
+        android:id="@+id/imgItemRecipeResult"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgItemPlus"
+        app:layout_constraintStart_toEndOf="@+id/imgItemRecipe1"
+        app:layout_constraintTop_toBottomOf="@+id/imgItemRecipe1"
+        app:srcCompat="@drawable/a11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

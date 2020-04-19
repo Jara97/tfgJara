@@ -1,0 +1,41 @@
+<!-- La altura de la cabecera suele ser de 192dp y el padding de 16dp.
+     Además suele poseer una imagen de fondo bastante colorida.
+     Si dispone de una imagen de pérfil, ésta suele ser de 64dp -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llNavHeaderRoot"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/toolbar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ImageView
+        android:id="@+id/imgUserPhoto"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:paddingTop="16dp"
+        app:srcCompat="@drawable/tftlogo" />
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/Summoner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+</LinearLayout>

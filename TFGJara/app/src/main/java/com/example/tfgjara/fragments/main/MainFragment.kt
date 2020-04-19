@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -11,6 +12,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
@@ -19,6 +21,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tfgjara.MainActivityViewModel
 import com.example.tfgjara.R
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_fragment.*
 import java.util.*
 
@@ -27,7 +30,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
     private val viewModel: MainActivityViewModel by activityViewModels()
 
     private val navController: NavController by lazy {
-        findNavController()
+       findNavController()
     }
 
     private val listAdapter: MainFragmentAdapter = MainFragmentAdapter().apply {
@@ -48,9 +51,8 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         setupRecyclerView()
         setListeners()
         setObservers()
+
     }
-
-
 
     private fun setupViews() {
         (requireActivity() as AppCompatActivity).supportActionBar?.run {

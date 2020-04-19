@@ -31,16 +31,17 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setupViews()
-        setListeners()
-        setObservers()
     }
 
     private fun setupViews() {
+
+        (requireActivity() as AppCompatActivity).supportActionBar?.run {
+            setTitle(R.string.champion_title)
+        }
+
+
         val s: Skill =viewModel.getChampionSkill(viewModel.getActualChampion().championId)
         val c:Champion=viewModel.getActualChampion()
-        (requireActivity() as AppCompatActivity).supportActionBar?.run {
-            setTitle(c.name)
-        }
 
         lblCNameD.text=c.name
         imgChampionD.setImageResource(selectImg(c.name))
@@ -53,9 +54,11 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
         setTraitDescription(c.traits)
         setTraitEfect(c.traits)
 
+        imgCItem1.setImageResource(selectImgItem((c.items[0].toString())))
+        imgCItem2.setImageResource(selectImgItem((c.items[1].toString())))
+        imgCItem3.setImageResource(selectImgItem((c.items[2].toString())))
+
     }
-
-
 
     private fun setTraitDescription(traits: List<String>) {
         lblCTrait1Desc.text=viewModel.getChampionTrait(traits[0]).description
@@ -119,17 +122,16 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
 
     }
 
-    private fun setListeners() {
-
-    }
-
-    private fun setObservers() {
-
-    }
 
     fun selectImg(name: String): Int {
         val resId: Int = this.getResources()
             .getIdentifier(name.toLowerCase().replace(" ","").replace("'",""), "drawable", context!!.getPackageName())
+        return resId
+
+    }
+    fun selectImgItem(name: String): Int {
+        val resId: Int = this.getResources()
+            .getIdentifier("a"+name.toLowerCase().replace(" ","").replace("'",""), "drawable", context!!.getPackageName())
         return resId
 
     }

@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">TFGJara</string>
     <string name="main_title">Boguez TFT</string>
+    <string name="items">Items</string>
+    <string name="profile">Profile</string>
+    <string name="match_history">Match history</string>
+    <string name="Summoner">Summoner name</string>
+    <string name="main_open_navigation_drawer">open</string>
+    <string name="main_close_navigation_drawer">close</string>
+    <string name="champion_title">Champion Info</string>
+    <string name="match_history2">Match History</string>
+    <string name="match_history3">Match History</string>
+    <string name="sum_not_found">Summoner not found</string>
+    <string name="no_games_played_yet">No games played yet</string>
 </resources>

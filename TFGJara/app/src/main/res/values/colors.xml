@@ -9,6 +9,7 @@
     <color name="sortDescending">#FF84A2</color>
     <color name="traitEfects">#3F5FFD  </color>
     <color name="lightblue">#DAEBFA </color>
+    <color name="background">#FF424242</color>
 
 
 </resources>

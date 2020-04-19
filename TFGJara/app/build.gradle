@@ -54,6 +54,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
     implementation "com.google.android.material:material:1.2.0-alpha04"
     implementation 'androidx.fragment:fragment-ktx:1.2.1'
+    implementation 'com.github.stelar7:R4J:1.7.26'
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     implementation "androidx.preference:preference-ktx:1.1.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

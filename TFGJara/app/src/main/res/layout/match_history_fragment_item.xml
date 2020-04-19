@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgMatchChampion9"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion8"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion8"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion7"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion7"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion6"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion4"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion5"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion3"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion2"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion1"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion0"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait3"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait7"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait7"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait6"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait4"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait5"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait4"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait4"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait4"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMatchTrait0"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait2"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait0"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait1"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait1"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchTrait0"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait0"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <TextView
+        android:id="@+id/lblMatchPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMatchMiniLegend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMatchGameType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/lblMatchGalaxy"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchMiniLegend"
+        app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
+
+    <TextView
+        android:id="@+id/lblMatchGalaxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblMatchGameType"
+        app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
+
+    <ImageView
+        android:id="@+id/imgMatchMiniLegend"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/lblMatchPosition"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a1" />
+
+    <TextView
+        android:id="@+id/lblMatchLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchMiniLegend"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchMiniLegend"
+        app:layout_constraintTop_toBottomOf="@+id/imgMatchMiniLegend" />
+
+    <ImageView
+        android:id="@+id/imgMatchTrait0"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMatchPosition"
+        app:srcCompat="@drawable/infiltrator" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMatchChampion0"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion0Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion0"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion0"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion0"
+        app:srcCompat="@drawable/stars1" />
+    <ImageView
+        android:id="@+id/imgMatchChampion1Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion1"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion1"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion1"
+        app:srcCompat="@drawable/stars1" />
+    <ImageView
+        android:id="@+id/imgMatchChampion2Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion2"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion2"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion2"
+        app:srcCompat="@drawable/stars1" />
+    <ImageView
+        android:id="@+id/imgMatchChampion3Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion3"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion3"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion3"
+        app:srcCompat="@drawable/stars1" />
+    <ImageView
+        android:id="@+id/imgMatchChampion4Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion4"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion4"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion4"
+        app:srcCompat="@drawable/stars2" />
+    <ImageView
+        android:id="@+id/imgMatchChampion5Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion5"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion5"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion5"
+        app:srcCompat="@drawable/stars3" />
+    <ImageView
+        android:id="@+id/imgMatchChampion6Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion6"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion6"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion6"
+        app:srcCompat="@drawable/stars2" />
+    <ImageView
+        android:id="@+id/imgMatchChampion7Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion7"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion7"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion7"
+        app:srcCompat="@drawable/stars2" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion8Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion8"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion8"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion8"
+        app:srcCompat="@drawable/stars2" />
+
+    <ImageView
+        android:id="@+id/imgMatchChampion9Stars"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion9"
+        app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion9"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchChampion9"
+        app:srcCompat="@drawable/stars3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

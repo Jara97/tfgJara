@@ -2,43 +2,43 @@
   {
     "id": 1,
     "name": "B.F. Sword",
-    "stats": "15 Attack damage.",
+    "stats": "15 Attack damage",
     "pasive": ""
   },
   {
     "id": 2,
     "name": "Recurve Bow",
-    "stats": "20% Attack speed.",
+    "stats": "20% Attack speed",
     "pasive": ""
   },
   {
     "id": 3,
     "name": "Needlessly Large Rod",
-    "stats": "20 Spell power.",
+    "stats": "20 Spell power",
     "pasive": ""
   },
   {
     "id": 4,
     "name": "Tear of the Goddess",
-    "stats": "20 Mana.",
+    "stats": "20 Mana",
     "pasive": ""
   },
   {
     "id": 5,
     "name": "Chain Vest",
-    "stats": "25 Armor.",
+    "stats": "25 Armor",
     "pasive": ""
   },
   {
     "id": 6,
     "name": "Negatron Cloak",
-    "stats": "25 Magic resist.",
+    "stats": "25 Magic resist",
     "pasive": ""
   },
   {
     "id": 7,
     "name": "Giant's Belt",
-    "stats": "200 Health.",
+    "stats": "200 Health",
     "pasive": ""
   },
   {
@@ -50,7 +50,7 @@
   {
     "id": 9,
     "name": "Sparring Gloves",
-    "stats": "10% Crit and +10% Dodge chance.",
+    "stats": "10% Crit and +10% Dodge chance",
     "pasive": ""
   },
   {
@@ -91,7 +91,7 @@
     "id": 16,
     "name": "Bloodthirster",
     "stats": "",
-    "pasive": "Wearer revives with 500 Health after a 2 sec delay.",
+    "pasive": "Attacks heal for 50% of damage.",
     "recipe": "1+6"
   },
   {

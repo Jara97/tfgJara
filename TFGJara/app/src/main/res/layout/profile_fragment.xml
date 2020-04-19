@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    >
+
+    <ImageView
+        android:id="@+id/imgProfileIcon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblProfileName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/b18" />
+
+    <TextView
+        android:id="@+id/lblProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textColor="@color/traitEfects"
+        android:textSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblProfileLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:text="TextView"
+        android:textColor="@color/lightblue"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfileIcon"
+        app:layout_constraintStart_toStartOf="@+id/imgProfileIcon"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileIcon" />
+
+    <ImageView
+        android:id="@+id/imgProfileLeague"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/progressProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblProfileLvl"
+        app:srcCompat="@drawable/ahri" />
+
+    <TextView
+        android:id="@+id/lblProfileLeague"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        app:layout_constraintBottom_toTopOf="@+id/lblProfileLeaguePoints"
+        app:layout_constraintEnd_toEndOf="@+id/lblProfileLeaguePoints"
+        app:layout_constraintStart_toStartOf="@+id/lblProfileLeaguePoints" />
+
+    <ProgressBar
+        android:id="@+id/progressProfile"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileLeague"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileLeague"
+        app:layout_constraintTop_toTopOf="@+id/imgProfileLeague" />
+
+    <TextView
+        android:id="@+id/lblProfileTotalGames"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="View"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        app:layout_constraintEnd_toStartOf="@+id/lblProfileWin"
+        app:layout_constraintStart_toStartOf="@+id/progressProfile"
+        app:layout_constraintTop_toTopOf="@+id/lblProfileWin" />
+
+    <TextView
+        android:id="@+id/lblProfileWin"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="View"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        app:layout_constraintBottom_toTopOf="@+id/progressProfile"
+        app:layout_constraintEnd_toEndOf="@+id/progressProfile"
+        app:layout_constraintStart_toEndOf="@+id/lblProfileTotalGames" />
+
+    <TextView
+        android:id="@+id/lblProfileLeaguePoints"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        app:layout_constraintBottom_toTopOf="@+id/lblProfileTotalGames"
+        app:layout_constraintEnd_toEndOf="@+id/lblProfileWin"
+        app:layout_constraintStart_toStartOf="@+id/progressProfile" />
+
+    <TextView
+        android:id="@+id/lblProfileWinratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/lightblue"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/progressProfile"
+        app:layout_constraintStart_toStartOf="@+id/progressProfile"
+        app:layout_constraintTop_toBottomOf="@+id/progressProfile" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/match_history3"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressProfile" />
+
+    <TextView
+        android:id="@+id/lblLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Profile"
+        android:textSize="32dp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNoTFTGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/no_games_played_yet"
+        android:textColor="@color/lightblue"
+        android:textSize="26dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

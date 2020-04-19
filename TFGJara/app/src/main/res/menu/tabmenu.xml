@@ -4,13 +4,13 @@
     <item
         android:id="@+id/mnu1"
         android:icon="@drawable/abc_vector_test"
-        android:title="a" />
+        android:title="Champions" />
     <item
         android:id="@+id/mnu2"
         android:icon="@drawable/abc_vector_test"
-        android:title="a" />
+        android:title="Items" />
     <item
         android:id="@+id/mnu3"
         android:icon="@drawable/abc_vector_test"
-        android:title="a" />
+        android:title="Team Builder" />
 </menu>
