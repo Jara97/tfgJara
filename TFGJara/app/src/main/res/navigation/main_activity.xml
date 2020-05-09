@@ -29,13 +29,13 @@
     android:name="com.example.tfgjara.fragments.main.ChampionFragment"
     android:label="@string/main_title"
     tools:layout="@layout/champion_fragment" >
-        <action
-            android:id="@+id/actionToHomeC"
-            app:destination="@id/championNavigation"
-            app:launchSingleTop="false"
-            app:popUpTo="@+id/mainNavigation"
-            app:popUpToInclusive="false" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/compBuilderNavigation"
+        android:name="com.example.tfgjara.fragments.main.CompBuilderFragment"
+        android:label="@string/compbuilder_title"
+        tools:layout="@layout/compbuilder_fragment" >
     </fragment>
 
     <fragment
@@ -43,20 +43,15 @@
         android:name="com.example.tfgjara.fragments.main.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/profile_fragment" >
-        <action
-            android:id="@+id/actionToHomeP"
-            app:destination="@id/profileNavigation"
-            app:launchSingleTop="false"
-            app:popUpTo="@+id/mainNavigation"
-            app:popUpToInclusive="false" />
+
 
     </fragment>
 
     <fragment
-        android:id="@+id/MatchHistoryNavigation"
+        android:id="@+id/matchHistoryNavigation"
         android:name="com.example.tfgjara.fragments.main.MatchHistoryFragment"
         android:label="@string/match_history"
-        tools:layout="@layout/profile_fragment" >
+        tools:layout="@layout/match_history_fragment" >
 
     </fragment>
 

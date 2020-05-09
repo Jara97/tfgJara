@@ -179,7 +179,7 @@
   },
   {
     "key": "ManaReaver",
-    "name": "Mana-Reaver",
+    "name": "ManaReaver",
     "description": "Mana-Reavers' Basic Attacks increase the mana cost of their target's next spellcast by a percentage.",
     "type": "class",
     "sets": [
@@ -198,7 +198,7 @@
   },
   {
     "key": "MechPilot",
-    "name": "Mech-Pilot",
+    "name": "MechPilot",
     "description": "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its pilots, as well as 3 random items from among them. When the Super-Mech dies the Pilots are ejected, granted Mana, and continue to fight.",
     "type": "origin",
     "sets": [

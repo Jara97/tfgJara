@@ -117,7 +117,7 @@
     "cost": 5,
     "traits": [
         "Cybernetic",
-        "Infiltrato"
+        "Infiltrator"
     ],
     "items": [
       15,
@@ -714,6 +714,20 @@
       23,
       14,
       14
+    ]
+  },
+  {
+    "name": "Xerath",
+    "championId": "TFT3_Xerath",
+    "cost": 5,
+    "traits": [
+      "Dark Star",
+      "Sorcerer"
+    ],
+    "items": [
+      23,
+      37,
+      44
     ]
   }
 ]

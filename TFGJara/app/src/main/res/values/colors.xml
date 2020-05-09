@@ -10,6 +10,14 @@
     <color name="traitEfects">#3F5FFD  </color>
     <color name="lightblue">#DAEBFA </color>
     <color name="background">#FF424242</color>
+    <color name="tier1">#FFF370</color>
+    <color name="tier2">#88A9AE</color>
+    <color name="tier3">#956421 </color>
+    <color name="win">#0AD800   </color>
+    <color name="lose">#D80000  </color>
+    <color name="mid">#001AD8  </color>
+
+
 
 
 </resources>

@@ -65,10 +65,11 @@ class MainActivity : AppCompatActivity(){
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         }
-        else if(R.id.MatchHistoryNavigation==navController.currentDestination?.id){
+        else if(R.id.matchHistoryNavigation==navController.currentDestination?.id){
             navController.navigate(R.id.profileNavigation)
         }
         else if(R.id.mainNavigation!=navController.currentDestination?.id){
+            setupAppBar()
             navController.navigate(R.id.mainNavigation)
         }
         else if(R.id.mainNavigation==navController.currentDestination?.id){
@@ -96,7 +97,7 @@ class MainActivity : AppCompatActivity(){
                     viewModel.resetSummoner()
                     viewModel.setSumonner(navigationView.txtUserName.text.toString())
                     navController.navigate(R.id.profileNavigation)
-
+                    setLoadingDialog()
                 }
             }
 
@@ -105,12 +106,27 @@ class MainActivity : AppCompatActivity(){
         return true
     }
 
+    private fun setLoadingDialog() {
+
+        val dialog:AlertDialog=AlertDialog.Builder(this)
+            .setView(R.layout.loading_dialog)
+            .setCancelable(false)
+            .create()
+
+        dialog.show()
+        Thread{
+            Thread.sleep(4000)
+            dialog.dismiss()
+        }.start()
+    }
+
 
     private fun setBottonNavigationView() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.mnu1 -> navController.navigate(R.id.mainNavigation)
-                R.id.mnu2 -> navController.navigate(R.id.itemsNavigation)
+                R.id.mnu2 -> { navController.navigate(R.id.itemsNavigation) ; setupAppBar() }
+                R.id.mnu3 -> { navController.navigate(R.id.compBuilderNavigation); setupAppBar() }
                 else -> true
             }
             true

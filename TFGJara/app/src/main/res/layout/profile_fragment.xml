@@ -162,15 +162,14 @@
         android:id="@+id/lblNoTFTGames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:text="@string/no_games_played_yet"
         android:textColor="@color/lightblue"
         android:textSize="26dp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/btnHistory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lblLoading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

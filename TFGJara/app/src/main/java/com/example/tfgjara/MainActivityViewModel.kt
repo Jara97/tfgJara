@@ -31,12 +31,15 @@ class MainActivityViewModel : ViewModel() {
 
     //private lateinit var  repository: LocalRepository
 
-    private val apikey:String="RGAPI-8e0639cd-7757-4f01-816d-62f3db696f05"
+    private val apikey:String="RGAPI-a7c592e9-4056-45fe-8026-4b062750457a"
     private val r4J = R4J(APICredentials(apikey))
 
     private val gson: Gson =Gson()
     private lateinit var  actualChampion: Champion
 
+    var actualCompTraits:MutableMap<String,Int> = mutableMapOf()
+
+    private var actualCompChampions:MutableList<Champion?> = mutableListOf(null,null,null,null,null,null,null,null,null,null)
 
     private val _actualItem: MutableLiveData<Item> =  MutableLiveData()
     val actualItem: LiveData<Item>
@@ -54,9 +57,8 @@ class MainActivityViewModel : ViewModel() {
     val games: LiveData<MutableList<String>>
         get() = _games
 
-    private val _gamesData: MutableLiveData<MutableList<TFTMatch>> =  MutableLiveData(mutableListOf())
-    val gamesData: LiveData<MutableList<TFTMatch>>
-        get() = _gamesData
+    private var gamesData:MutableList<TFTMatch> = mutableListOf()
+
 
     private val _actualSumonnerData: MutableLiveData<MutableList<LeagueEntry?>> =  MutableLiveData(mutableListOf())
     val actualSumonnerData: LiveData<MutableList<LeagueEntry?>>
@@ -105,6 +107,9 @@ class MainActivityViewModel : ViewModel() {
         _actualItem2.value=1
     }
 
+    fun getTraits():List<Trait>{
+        return traits
+    }
 
     fun getChampions():List<Champion>{
         return champions
@@ -135,6 +140,10 @@ class MainActivityViewModel : ViewModel() {
         return items.find {
             it.id==id
         }?:items[0]
+    }
+
+    fun getGamesData():List<TFTMatch>{
+        return gamesData
     }
 
     fun getItems():List<Item>{
@@ -187,9 +196,7 @@ class MainActivityViewModel : ViewModel() {
 
     fun getGames() {
         Thread{
-            if(!_summonerNotFound.value.equals("Summoner not found")){
-                _games.postValue( r4J.getTFTAPI().getMatchAPI().getMatchList(ServicePlatform.EUROPE, Summoner.byName(Platform.EUW1, sumonner).getPUUID(), 5))
-            }
+            _games.postValue( r4J.getTFTAPI().getMatchAPI().getMatchList(ServicePlatform.EUROPE, Summoner.byName(Platform.EUW1, sumonner).getPUUID(), 10))
 
         }.start()
 
@@ -197,13 +204,11 @@ class MainActivityViewModel : ViewModel() {
 
     fun loadGames() {
         Thread{
-            if(!_summonerNotFound.value.equals("Summoner not found")){
-                val list:MutableList<TFTMatch> = mutableListOf()
-                _games.value?.forEach {
-                    list.add((r4J.getTFTAPI().getMatchAPI().getMatch(ServicePlatform.EUROPE, it)))
-                }
-                _gamesData.postValue(list)
+            val list:MutableList<TFTMatch> = mutableListOf()
+            _games.value?.forEach {
+                list.add((r4J.getTFTAPI().getMatchAPI().getMatch(ServicePlatform.EUROPE, it)))
             }
+            gamesData=list
 
         }.start()
     }
@@ -212,11 +217,49 @@ class MainActivityViewModel : ViewModel() {
         _actualSumonner.value= null
         _actualSumonnerData.value=mutableListOf()
         _games.value=mutableListOf()
-        _gamesData.value=mutableListOf()
+        gamesData=mutableListOf()
         _summonerNotFound.value=""
         sumonner=""
     }
 
+    fun getActualCompChampions():MutableList<Champion?>{
+        return actualCompChampions
+    }
+
+    fun addActualCompChampions(champion:Champion){
+        if(!actualCompChampions.contains(champion)){
+            when {
+                actualCompChampions[0]==null -> { actualCompChampions[0]=champion }
+                actualCompChampions[1]==null -> { actualCompChampions[1]=champion }
+                actualCompChampions[2]==null -> { actualCompChampions[2]=champion }
+                actualCompChampions[3]==null -> { actualCompChampions[3]=champion }
+                actualCompChampions[4]==null -> { actualCompChampions[4]=champion }
+                actualCompChampions[5]==null -> { actualCompChampions[5]=champion }
+                actualCompChampions[6]==null -> { actualCompChampions[6]=champion }
+                actualCompChampions[7]==null -> { actualCompChampions[7]=champion }
+                actualCompChampions[8]==null -> { actualCompChampions[8]=champion }
+                actualCompChampions[9]==null -> { actualCompChampions[9]=champion }
+            }
+        }
+    }
+
+    fun addActualCompTraits(trait:String){
+        if(actualCompTraits.contains(trait)){
+            if(actualCompTraits[trait]==null){
+                actualCompTraits[trait]=1
+            }
+            else{
+                actualCompTraits[trait]=actualCompTraits[trait]!!+1
+            }
+        }
+        else{
+            actualCompTraits[trait] = 1
+        }
+    }
+
+    fun resetActualCompTraits(){
+        actualCompTraits= mutableMapOf()
+    }
 
 }
 

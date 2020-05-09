@@ -1,6 +1,7 @@
 package com.example.tfgjara.fragments.main
 
 import android.content.DialogInterface
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -57,6 +58,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
     private fun setupViews() {
         (requireActivity() as AppCompatActivity).supportActionBar?.run {
             setTitle(R.string.main_title)
+
         }
     }
 

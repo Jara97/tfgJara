@@ -31,12 +31,15 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setupViews()
+
     }
 
     private fun setupViews() {
 
         (requireActivity() as AppCompatActivity).supportActionBar?.run {
             setTitle(R.string.champion_title)
+            setDisplayHomeAsUpEnabled(false)
+            setHomeButtonEnabled(false)
         }
 
 

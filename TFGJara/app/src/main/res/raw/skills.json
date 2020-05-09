@@ -454,5 +454,14 @@
     "damage":"150 / 225 / 300",
     "shield":"0",
     "heal":"0"
+  },
+  {
+
+    "championId": "TFT3_Xerath",
+    "name": "Abyssal Bombardment",
+    "description": "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks. Meteors deal magic damage upon impact and if they kill their target, all adjacent enemies take magic damage and are stunned for 1.5 seconds.",
+    "damage":"350 / 450 / 2500",
+    "shield":"0",
+    "heal":"Duration: 6 / 8 / 2500"
   }
 ]

@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cardview_dark_background"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -11,6 +12,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion8"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -20,6 +22,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion9"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion7"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -29,6 +32,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion8"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion6"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -38,6 +42,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion6"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion4"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -47,6 +52,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion7"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion5"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -56,6 +62,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion5"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion3"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -65,6 +72,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion4"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion2"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -73,6 +81,8 @@
         android:id="@+id/imgMatchChampion2"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion3"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion1"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -82,11 +92,9 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion1"
         app:layout_constraintStart_toEndOf="@+id/imgMatchTrait3"
-        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait7"
+        app:layout_constraintTop_toTopOf="@+id/imgMatchTrait3"
         app:srcCompat="@drawable/ahri" />
 
     <ImageView
@@ -117,8 +125,9 @@
         android:id="@+id/imgMatchTrait4"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgMatchTrait0"
         app:layout_constraintTop_toBottomOf="@+id/imgMatchTrait0"
         app:srcCompat="@drawable/infiltrator" />
 
@@ -153,24 +162,31 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
+        android:textColor="@color/blueSoft"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="@+id/imgMatchMiniLegend"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutColor"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblMatchGameType"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="14dp"
         android:text="TextView"
+        android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toStartOf="@+id/lblMatchGalaxy"
         app:layout_constraintStart_toEndOf="@+id/imgMatchMiniLegend"
         app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
 
     <TextView
         android:id="@+id/lblMatchGalaxy"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblMatchGameType"
         app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
@@ -179,17 +195,18 @@
         android:id="@+id/imgMatchMiniLegend"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toEndOf="@+id/lblMatchPosition"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/a1" />
+        app:srcCompat="@drawable/hushtail" />
 
     <TextView
         android:id="@+id/lblMatchLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="@+id/imgMatchMiniLegend"
         app:layout_constraintStart_toStartOf="@+id/imgMatchMiniLegend"
         app:layout_constraintTop_toBottomOf="@+id/imgMatchMiniLegend" />
@@ -198,9 +215,9 @@
         android:id="@+id/imgMatchTrait0"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutColor"
         app:layout_constraintTop_toBottomOf="@+id/lblMatchPosition"
         app:srcCompat="@drawable/infiltrator" />
 
@@ -209,6 +226,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion2"
         app:layout_constraintStart_toEndOf="@+id/imgMatchChampion0"
         app:layout_constraintTop_toTopOf="@+id/imgMatchChampion0"
         app:srcCompat="@drawable/ahri" />
@@ -217,6 +235,7 @@
         android:id="@+id/imgMatchChampion0Stars"
         android:layout_width="24dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         app:layout_constraintBottom_toTopOf="@+id/imgMatchChampion0"
         app:layout_constraintEnd_toEndOf="@+id/imgMatchChampion0"
         app:layout_constraintStart_toStartOf="@+id/imgMatchChampion0"
@@ -296,6 +315,14 @@
         app:layout_constraintStart_toStartOf="@+id/imgMatchChampion9"
         app:srcCompat="@drawable/stars3" />
 
+    <LinearLayout
+        android:id="@+id/linearLayoutColor"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

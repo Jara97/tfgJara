@@ -2,6 +2,7 @@ package com.example.tfgjara.fragments.main
 
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -41,7 +42,18 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
 
     private fun setListeners() {
         btnHistory.setOnClickListener {
-            navController.navigate(R.id.MatchHistoryNavigation)
+            if(viewModel.getGamesData().isNotEmpty()){
+                navController.navigate(R.id.matchHistoryNavigation)
+            }
+            else{
+                AlertDialog.Builder(context!!)
+                    .setTitle("Match History not loadet yet")
+                    .setMessage("Wait a few seconds and try again")
+                    .setCancelable(true)
+                    .setPositiveButton("Accept") { _, _ -> }
+                    .create().show()
+            }
+
         }
     }
 
@@ -52,6 +64,8 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
     private fun setupViews() {
         (requireActivity() as AppCompatActivity).supportActionBar?.run {
             setTitle(R.string.profile)
+            setDisplayHomeAsUpEnabled(false)
+            setHomeButtonEnabled(false)
         }
         setVisibility(false)
         setVisibility2(false)
@@ -103,7 +117,7 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
         lblProfileTotalGames.text=("Games "+(it[0]?.losses+it[0].wins).toString())
         lblProfileLeaguePoints.text=(it[0].leaguePoints.toString()+" "+"LP")
         lblProfileWin.text=("Wins "+it[0]?.wins.toString())
-        lblProfileWinratio.text=((it[0].wins.div(it[0].losses.toDouble())*100).toInt().toString()+"%")
+        lblProfileWinratio.text=((it[0].wins.div(it[0].losses.toDouble()+it[0].wins)*100).toInt().toString()+"%")
         progressProfile.max=it[0].losses+it[0].wins
         progressProfile.progress=it[0].wins
         imgProfileLeague.setImageResource(selectImgItem(it[0].tierDivisionType.tier.toString()))
