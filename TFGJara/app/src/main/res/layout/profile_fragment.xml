@@ -61,7 +61,7 @@
 
     <TextView
         android:id="@+id/lblProfileLeague"
-        android:layout_width="96dp"
+        android:layout_width="124dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="TextView"
@@ -85,7 +85,7 @@
 
     <TextView
         android:id="@+id/lblProfileTotalGames"
-        android:layout_width="74dp"
+        android:layout_width="94dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="View"
@@ -97,7 +97,7 @@
 
     <TextView
         android:id="@+id/lblProfileWin"
-        android:layout_width="74dp"
+        android:layout_width="94dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="4dp"

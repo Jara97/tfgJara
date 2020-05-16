@@ -1,5 +1,6 @@
 package com.example.tfgjara
 
+import android.app.Activity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,6 +10,7 @@ import com.example.tfgjara.data.Skill
 import com.example.tfgjara.data.Trait
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import kotlinx.android.synthetic.main.match_history_fragment_item.view.*
 import no.stelar7.api.r4j.basic.APICredentials
 import no.stelar7.api.r4j.basic.constants.api.Platform
 import no.stelar7.api.r4j.basic.constants.api.ServicePlatform
@@ -31,7 +33,7 @@ class MainActivityViewModel : ViewModel() {
 
     //private lateinit var  repository: LocalRepository
 
-    private val apikey:String="RGAPI-a7c592e9-4056-45fe-8026-4b062750457a"
+    private val apikey:String="RGAPI-28d1851d-9db2-4ccc-aa20-39560ed099d9"
     private val r4J = R4J(APICredentials(apikey))
 
     private val gson: Gson =Gson()
@@ -39,13 +41,21 @@ class MainActivityViewModel : ViewModel() {
 
     var actualCompTraits:MutableMap<String,Int> = mutableMapOf()
 
+    private var actualGame:List<TFTParticipant> = listOf()
+
+    var actualGameDuration:Int = 0
+
+    var actualGameDate:String = ""
+
+    var actualGameType:String = ""
+
     private var actualCompChampions:MutableList<Champion?> = mutableListOf(null,null,null,null,null,null,null,null,null,null)
 
     private val _actualItem: MutableLiveData<Item> =  MutableLiveData()
     val actualItem: LiveData<Item>
         get() = _actualItem
 
-    private val _actualItem2: MutableLiveData<Int> =  MutableLiveData()
+    private val _actualItem2: MutableLiveData<Int> =  MutableLiveData(1)
     val actualItem2: LiveData<Int>
         get() = _actualItem2
 
@@ -56,6 +66,10 @@ class MainActivityViewModel : ViewModel() {
     private val _games: MutableLiveData<MutableList<String>> =  MutableLiveData()
     val games: LiveData<MutableList<String>>
         get() = _games
+
+    private val _names: MutableLiveData<MutableMap<String,String>> =  MutableLiveData()
+    val names: LiveData<MutableMap<String,String>>
+        get() = _names
 
     private var gamesData:MutableList<TFTMatch> = mutableListOf()
 
@@ -213,6 +227,17 @@ class MainActivityViewModel : ViewModel() {
         }.start()
     }
 
+    fun loadPlayerNames(tftParticipant: List<TFTParticipant>){
+        Thread{
+            val list:MutableMap<String,String> = mutableMapOf()
+            tftParticipant.forEach {
+                list[it.puuid]=r4J.tftapi.summonerAPI.getSummonerByPUUID(Platform.EUW1,it.puuid).name
+            }
+            _names.postValue(list)
+        }.start()
+
+    }
+
     fun resetSummoner() {
         _actualSumonner.value= null
         _actualSumonnerData.value=mutableListOf()
@@ -260,6 +285,24 @@ class MainActivityViewModel : ViewModel() {
     fun resetActualCompTraits(){
         actualCompTraits= mutableMapOf()
     }
+
+    fun setGame(it: TFTMatch) {
+        actualGame=it.participants
+        actualGameDuration=it.duration
+        actualGameDate=(it.matchCreationAsDate.toString().substring(8,10)+it.matchCreationAsDate.toString().substring(4,8)+it.matchCreationAsDate.toString().substring(0,4)).replace("-","/")
+        if(it.queue.name.contains("RANKED")){
+            actualGameType="Ranked Game"
+        }
+        else{
+            actualGameType="Normal Game"
+        }
+
+    }
+
+    fun getGame():List<TFTParticipant>{
+        return actualGame
+    }
+
 
 }
 

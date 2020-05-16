@@ -1,6 +1,8 @@
 package com.example.tfgjara
 
+import android.annotation.SuppressLint
 import android.content.DialogInterface
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -67,6 +69,9 @@ class MainActivity : AppCompatActivity(){
         }
         else if(R.id.matchHistoryNavigation==navController.currentDestination?.id){
             navController.navigate(R.id.profileNavigation)
+        }
+        else if(R.id.gameNavigation==navController.currentDestination?.id){
+            navController.navigate(R.id.matchHistoryNavigation)
         }
         else if(R.id.mainNavigation!=navController.currentDestination?.id){
             setupAppBar()

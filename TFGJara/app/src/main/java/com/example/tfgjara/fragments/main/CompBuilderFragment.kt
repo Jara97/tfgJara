@@ -1,5 +1,7 @@
 package com.example.tfgjara.fragments.main
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.graphics.ColorFilter
 import android.graphics.LightingColorFilter
 import android.os.Bundle

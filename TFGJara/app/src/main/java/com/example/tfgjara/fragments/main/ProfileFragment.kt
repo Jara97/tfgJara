@@ -1,5 +1,6 @@
 package com.example.tfgjara.fragments.main
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -107,7 +108,6 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
                 lblLoading.text=it
             }
         }
-
 
     }
 

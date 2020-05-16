@@ -135,6 +135,7 @@
         android:id="@+id/imgMatchTrait3"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMatchChampion0"
         app:layout_constraintStart_toEndOf="@+id/imgMatchTrait2"
         app:layout_constraintTop_toTopOf="@+id/imgMatchTrait0"
         app:srcCompat="@drawable/infiltrator" />
@@ -170,12 +171,12 @@
 
     <TextView
         android:id="@+id/lblMatchGameType"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textSize="14dp"
         android:text="TextView"
         android:textColor="@color/cardview_light_background"
+        android:textSize="14dp"
         app:layout_constraintEnd_toStartOf="@+id/lblMatchGalaxy"
         app:layout_constraintStart_toEndOf="@+id/imgMatchMiniLegend"
         app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
@@ -185,8 +186,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
-        android:textSize="14dp"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblMatchGameType"
         app:layout_constraintTop_toTopOf="@+id/lblMatchPosition" />
@@ -206,6 +208,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="14dp"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="@+id/imgMatchMiniLegend"
         app:layout_constraintStart_toStartOf="@+id/imgMatchMiniLegend"
@@ -323,6 +326,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/lblMatchDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="14dp"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/lblMatchPosition"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutColor"
+        app:layout_constraintTop_toBottomOf="@+id/lblMatchPosition" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.tfgjara.fragments.main
 
+import android.content.pm.ActivityInfo
 import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
@@ -31,6 +32,7 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setupViews()
+
 
     }
 

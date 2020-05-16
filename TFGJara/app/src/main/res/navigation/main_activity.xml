@@ -55,5 +55,13 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/gameNavigation"
+        android:name="com.example.tfgjara.fragments.main.GameFragment"
+        android:label="@string/match_history"
+        tools:layout="@layout/game_fragment" >
+
+    </fragment>
+
 
 </navigation>

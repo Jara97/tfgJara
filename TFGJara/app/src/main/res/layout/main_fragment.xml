@@ -37,13 +37,13 @@
 
     <TextView
         android:id="@+id/lblCost"
-        android:layout_width="35dp"
+        android:layout_width="42dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="Cost"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/gray"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblClass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lblClass" />

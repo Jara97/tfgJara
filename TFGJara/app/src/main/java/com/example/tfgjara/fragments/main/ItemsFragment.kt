@@ -1,5 +1,7 @@
 package com.example.tfgjara.fragments.main
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.View
@@ -29,9 +31,8 @@ class ItemsFragment : Fragment(R.layout.items_fragment) {
         setObservers()
         viewModel.resetItem()
         viewModel.selectItem2(1)
-        list =viewModel.getItems().filter {
-            it.id.toString().contains(1.toString())
-        }
+        list =viewModel.getItems().filter { it.id.toString().contains(1.toString()) }
+
     }
 
     private fun setupViews() {

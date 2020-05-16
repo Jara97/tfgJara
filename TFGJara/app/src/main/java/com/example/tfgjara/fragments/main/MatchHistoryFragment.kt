@@ -1,5 +1,6 @@
 package com.example.tfgjara.fragments.main
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -26,9 +27,10 @@ class MatchHistoryFragment : Fragment(R.layout.match_history_fragment) {
     }
 
     private val listAdapter: MatchHistoryFragmentAdapter = MatchHistoryFragmentAdapter().apply {
-//        this.setOnItemClick {
-//
-//        }
+        this.setOnItemClick {
+            viewModel.setGame(it)
+            navController.navigate(R.id.gameNavigation)
+        }
 
     }
 

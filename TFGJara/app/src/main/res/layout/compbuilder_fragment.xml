@@ -1,231 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/cardview_dark_background"
-    android:layout_height="match_parent">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lstCompChampions"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait3" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait0"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait1"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait0"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait2"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait1"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait3"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/lstCompChampions"
-        app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait2"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait4"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait0"
-        app:layout_constraintTop_toTopOf="@+id/imgCompTrait0"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait6"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/lstCompChampions"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait2"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait5"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait5"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait1"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait4"
-        app:srcCompat="@drawable/transparente" />
-
-    <ImageView
-        android:id="@+id/imgCompTrait7"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait3"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait6"
-        app:srcCompat="@drawable/transparente" />
-
-    <TextView
-        android:id="@+id/lblCompTraits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/traits"
-        android:textColor="@color/lightblue"
-        app:layout_constraintBottom_toTopOf="@+id/imgCompTrait0"
-        app:layout_constraintEnd_toEndOf="@+id/imgCompTrait4"
-        app:layout_constraintStart_toStartOf="@+id/imgCompTrait0" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion0"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgCompTrait4"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion1"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait4"
-        app:layout_constraintTop_toBottomOf="@+id/imgCompTrait4"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion1"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion2"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion0"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion2"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion3"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion1"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion3"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion4"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion2"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion4"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion3"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion5"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion6"
-        app:layout_constraintStart_toStartOf="@+id/imgcompChampion0"
-        app:layout_constraintTop_toBottomOf="@+id/imgcompChampion0"
-        app:srcCompat="@drawable/cuadrado" />
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <ImageView
-        android:id="@+id/imgcompChampion6"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion7"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion5"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion7"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion8"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion6"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion8"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
-        app:layout_constraintEnd_toStartOf="@+id/imgcompChampion9"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion7"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <ImageView
-        android:id="@+id/imgcompChampion9"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgcompChampion8"
-        app:srcCompat="@drawable/cuadrado" />
-
-    <LinearLayout
-        android:id="@+id/separator"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="12dp"
-        android:background="@color/lightblue"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/lstCompChampions"
-        app:layout_constraintEnd_toEndOf="@+id/imgcompChampion9"
-        app:layout_constraintStart_toStartOf="@+id/imgCompTrait3"
-        app:layout_constraintTop_toBottomOf="@+id/lblListTraits"></LinearLayout>
-
-    <TextView
-        android:id="@+id/lblListTraits"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/lightblue"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/separator"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgCompTrait7"
-        app:layout_constraintTop_toBottomOf="@+id/imgcompChampion7" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
+                <ImageView
+                    android:id="@+id/imgCompTrait0"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="84dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait0"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imgCompTrait3"
+                    app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait1"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toStartOf="@+id/imgCompTrait0"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait2"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait0"
+                    app:layout_constraintTop_toTopOf="@+id/imgCompTrait0"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait2"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait5"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait1"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait4"
+                    app:srcCompat="@drawable/transparente" />
+
+                <ImageView
+                    android:id="@+id/imgCompTrait7"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait3"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCompTrait6"
+                    app:srcCompat="@drawable/transparente" />
+
+                <TextView
+                    android:id="@+id/lblCompTraits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/traits"
+                    android:textColor="@color/lightblue"
+                    app:layout_constraintBottom_toTopOf="@+id/imgCompTrait0"
+                    app:layout_constraintEnd_toEndOf="@+id/imgCompTrait4"
+                    app:layout_constraintStart_toStartOf="@+id/imgCompTrait0" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion0"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCompTrait4"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion1"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait4"
+                    app:layout_constraintTop_toTopOf="@+id/imgCompTrait4"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion1"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion2"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion0"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion2"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion3"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion1"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion3"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion4"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion2"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion4"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion3"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion5"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion6"
+                    app:layout_constraintStart_toStartOf="@+id/imgcompChampion0"
+                    app:layout_constraintTop_toBottomOf="@+id/imgcompChampion0"
+                    app:srcCompat="@drawable/cuadrado" />
+
+
+                <ImageView
+                    android:id="@+id/imgcompChampion6"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion7"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion5"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion7"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion8"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion6"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion8"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
+                    app:layout_constraintEnd_toStartOf="@+id/imgcompChampion9"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion7"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <ImageView
+                    android:id="@+id/imgcompChampion9"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgcompChampion5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgcompChampion8"
+                    app:srcCompat="@drawable/cuadrado" />
+
+                <LinearLayout
+                    android:id="@+id/separator"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/lightblue"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imgcompChampion9"
+                    app:layout_constraintStart_toStartOf="@+id/imgCompTrait3"
+                    app:layout_constraintTop_toBottomOf="@+id/lblListTraits"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblListTraits"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightblue"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toTopOf="@+id/separator"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgCompTrait7"
+                    app:layout_constraintTop_toBottomOf="@+id/imgcompChampion7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/lstCompChampions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

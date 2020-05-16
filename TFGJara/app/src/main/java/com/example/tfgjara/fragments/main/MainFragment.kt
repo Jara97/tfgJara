@@ -1,6 +1,7 @@
 package com.example.tfgjara.fragments.main
 
 import android.content.DialogInterface
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View

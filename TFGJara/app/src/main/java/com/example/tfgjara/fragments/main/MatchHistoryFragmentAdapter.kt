@@ -1,22 +1,20 @@
 package com.example.tfgjara.fragments.main
 
-import android.graphics.Color
 import android.graphics.ColorFilter
 import android.graphics.LightingColorFilter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.viewModels
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tfgjara.MainActivityViewModel
 import com.example.tfgjara.R
-import com.example.tfgjara.data.Trait
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.match_history_fragment_item.view.*
 import no.stelar7.api.r4j.pojo.tft.TFTMatch
 import no.stelar7.api.r4j.pojo.tft.TFTParticipant
 import no.stelar7.api.r4j.pojo.tft.TFTTrait
 import no.stelar7.api.r4j.pojo.tft.TFTUnit
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 
 class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAdapter.ViewHolder>() {
@@ -74,17 +72,19 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
 
 
         fun bind(tftMatch: TFTMatch) {
-
             val player:TFTParticipant=tftMatch.participants.find { x->
                 x.puuid==playerPuuid
             }?:tftMatch.participants.get(0)
+
+            containerView.lblMatchDate.text=(tftMatch.matchCreationAsDate.toString().substring(8,10)+tftMatch.matchCreationAsDate.toString().substring(4,8)+tftMatch.matchCreationAsDate.toString().substring(0,4)).replace("-","/")
+
 
             containerView.lblMatchPosition.text=player.placement.toString()+"º Place"
             containerView.lblMatchGalaxy.text=tftMatch.gameVariation.replace("TFT3_GameVariation_","").replace("None","No Galaxy")
 
             containerView.lblMatchLevel.text="LV "+player.level.toString()
             if(tftMatch.queue.name.contains("RANKED")){
-                containerView.lblMatchGameType.text=containerView.context.getString(R.string.ranked_game)
+                containerView.lblMatchGameType.text=containerView.context.getString( R.string.ranked_game)
             }
             else{
                 containerView.lblMatchGameType.text=containerView.context.getString(R.string.normal_game)
@@ -108,9 +108,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
 
             containerView.imgMatchMiniLegend.setImageResource(selectImgPet(player.companion.species))
 
-//            containerView.setOnClickListener {
-//                onItemClick?.invoke(tftMatch)
-//            }
+            containerView.setOnClickListener {
+                onItemClick?.invoke(tftMatch)
+            }
         }
 
         private fun loadPlayerTraits(traitList: List<TFTTrait>) {

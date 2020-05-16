@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/cardview_dark_background">
+
+    <TextView
+        android:id="@+id/lblPlayerName"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPlayerLvl"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion0"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerPet"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerPet" />
+
+    <ImageView
+        android:id="@+id/imgPlayerPet"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblPlayerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dssquid" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion0"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion1"
+        app:layout_constraintStart_toEndOf="@+id/lblPlayerName"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerPet"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion2"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion0"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion3"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion1"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion4"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion2"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion2"
+        app:srcCompat="@drawable/ahri" />
+
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion5"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion3"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion3"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion6"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion4"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion7"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion5"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion7"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion8"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion6"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion8"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPlayerChampion9"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion7"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <ImageView
+        android:id="@+id/imgPlayerChampion9"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerChampion8"
+        app:layout_constraintTop_toTopOf="@+id/imgPlayerChampion0"
+        app:srcCompat="@drawable/ahri" />
+
+    <TextView
+        android:id="@+id/lblPlayerLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="LV 7"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/lblPlayerName"
+        app:layout_constraintStart_toStartOf="@+id/lblPlayerName"
+        app:layout_constraintTop_toBottomOf="@+id/lblPlayerName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

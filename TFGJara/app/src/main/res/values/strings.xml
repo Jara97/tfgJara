@@ -17,4 +17,7 @@
     <string name="compbuilder_title">Comp Builder</string>
     <string name="traits">Traits</string>
     <string name="loading">Loading..</string>
+    <string name="empty" />
+    <string name="game_info">Game info</string>
+    <string name="return_">Back to match history</string>
 </resources>
