@@ -39,13 +39,8 @@ class MatchHistoryFragment : Fragment(R.layout.match_history_fragment) {
         super.onActivityCreated(savedInstanceState)
         setupViews()
         setupRecyclerView()
-        setObservers()
-        setListeners()
     }
 
-    private fun setListeners() {
-
-    }
 
     private fun setupRecyclerView() {
         lstMatch.run {
@@ -66,10 +61,6 @@ class MatchHistoryFragment : Fragment(R.layout.match_history_fragment) {
             setDisplayHomeAsUpEnabled(false)
             setHomeButtonEnabled(false)
         }
-
-    }
-
-    private fun setObservers() {
 
     }
 

@@ -1,6 +1,5 @@
 package com.example.tfgjara.fragments.main
 
-import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -15,8 +14,6 @@ import com.example.tfgjara.R
 import kotlinx.android.synthetic.main.profile_fragment.*
 import no.stelar7.api.r4j.pojo.lol.league.LeagueEntry
 import no.stelar7.api.r4j.pojo.lol.summoner.Summoner
-import no.stelar7.api.r4j.pojo.tft.TFTParticipant
-import kotlin.math.absoluteValue
 
 
 class ProfileFragment : Fragment(R.layout.profile_fragment) {
@@ -81,7 +78,7 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
     private fun setObservers() {
         viewModel.actualSumonner.observe(this){
             if(it!=null){
-                setViews(it)
+                setBasicsViews(it)
                 viewModel.getLeague()
                 viewModel.getGames()
                 setVisibility2(true)
@@ -124,7 +121,7 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
 
     }
 
-    private fun setViews(it:Summoner) {
+    private fun setBasicsViews(it:Summoner) {
         lblProfileName.setText(it.name)
         lblProfileLvl.text="LV "+it.summonerLevel.toString()
         imgProfileIcon.setImageResource(selectImgIcon(it.profileIconId.toString()))
