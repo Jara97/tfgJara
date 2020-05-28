@@ -2,6 +2,7 @@ package com.example.tfgjara.fragments.main
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -29,7 +30,8 @@ class MatchHistoryFragment : Fragment(R.layout.match_history_fragment) {
     private val listAdapter: MatchHistoryFragmentAdapter = MatchHistoryFragmentAdapter().apply {
         this.setOnItemClick {
             viewModel.setGame(it)
-            navController.navigate(R.id.gameNavigation)
+            setLoadingDialog()
+            viewModel.loadPlayerNames(viewModel.getGame())
         }
 
     }
@@ -62,6 +64,21 @@ class MatchHistoryFragment : Fragment(R.layout.match_history_fragment) {
             setHomeButtonEnabled(false)
         }
 
+    }
+
+    private fun setLoadingDialog() {
+
+        val dialog: AlertDialog = AlertDialog.Builder(context!!)
+            .setView(R.layout.loading_dialog)
+            .setCancelable(false)
+            .create()
+
+        dialog.show()
+        Thread{
+            Thread.sleep(3000)
+            dialog.dismiss()
+            navController.navigate(R.id.gameNavigation)
+        }.start()
     }
 
 }

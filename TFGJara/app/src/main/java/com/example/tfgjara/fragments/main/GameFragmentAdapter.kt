@@ -31,7 +31,6 @@ class GameFragmentAdapter : RecyclerView.Adapter<GameFragmentAdapter.ViewHolder>
 
     fun loadNames(nameList:Map<String,String>){
         names=nameList
-        notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int {
@@ -56,11 +55,9 @@ class GameFragmentAdapter : RecyclerView.Adapter<GameFragmentAdapter.ViewHolder>
 
     }
 
-
     fun getItem(position:Int): TFTParticipant {
         return data[position]
     }
-
 
 
 
@@ -156,10 +153,22 @@ class GameFragmentAdapter : RecyclerView.Adapter<GameFragmentAdapter.ViewHolder>
                 containerView.imgPlayerChampion7.visibility = View.INVISIBLE
                 containerView.imgPlayerChampion8.visibility = View.INVISIBLE
                 containerView.imgPlayerChampion9.visibility = View.INVISIBLE
-            } else if (size <= 3) {
+            } else if (size == 3) {
                 containerView.imgPlayerChampion0.setImageResource(selectImg(list[0].characterId))
                 containerView.imgPlayerChampion1.setImageResource(selectImg(list[1].characterId))
                 containerView.imgPlayerChampion2.setImageResource(selectImg(list[2].characterId))
+                containerView.imgPlayerChampion3.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion4.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion5.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion6.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion7.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion8.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion9.visibility = View.INVISIBLE
+            }
+            else {
+                containerView.imgPlayerChampion0.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion1.visibility = View.INVISIBLE
+                containerView.imgPlayerChampion2.visibility = View.INVISIBLE
                 containerView.imgPlayerChampion3.visibility = View.INVISIBLE
                 containerView.imgPlayerChampion4.visibility = View.INVISIBLE
                 containerView.imgPlayerChampion5.visibility = View.INVISIBLE

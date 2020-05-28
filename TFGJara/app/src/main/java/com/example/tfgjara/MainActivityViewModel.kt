@@ -33,7 +33,7 @@ class MainActivityViewModel : ViewModel() {
 
     //private lateinit var  repository: LocalRepository
 
-    private val apikey:String="RGAPI-28d1851d-9db2-4ccc-aa20-39560ed099d9"
+    private val apikey:String="RGAPI-2f05fe87-7de7-4992-a871-6029140d6ae6"
     private val r4J = R4J(APICredentials(apikey))
 
     private val gson: Gson =Gson()
