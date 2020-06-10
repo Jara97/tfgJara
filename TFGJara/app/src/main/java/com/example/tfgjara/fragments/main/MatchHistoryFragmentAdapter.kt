@@ -215,8 +215,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
 
         private fun selectTraitcolor(list: List<TFTTrait>) {
             val filter3: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier1), containerView.resources.getColor(R.color.background))
-            val filter2: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier2), containerView.resources.getColor(R.color.tier2))
-            val filter1: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier3), containerView.resources.getColor(R.color.tier3))
+            val filter2: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier2), containerView.resources.getColor(R.color.background))
+            val filter1: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier3), containerView.resources.getColor(R.color.background))
+            val filter4: ColorFilter = LightingColorFilter(containerView.resources.getColor(R.color.tier4), containerView.resources.getColor(R.color.background))
 
             try {
 
@@ -232,6 +233,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     3 -> {
                         containerView.imgMatchTrait0.setColorFilter(filter3)
                     }
+                    4 -> {
+                        containerView.imgMatchTrait0.setColorFilter(filter4)
+                    }
                 }
                 
                 when (list[1].tierCurrent) {
@@ -246,6 +250,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     3 -> {
                         containerView.imgMatchTrait1.setColorFilter(filter3)
                     }
+                    4 -> {
+                        containerView.imgMatchTrait1.setColorFilter(filter4)
+                    }
                 }
                 when (list[2].tierCurrent) {
                     1 -> {
@@ -258,6 +265,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     }
                     3 -> {
                         containerView.imgMatchTrait2.setColorFilter(filter3)
+                    }
+                    4 -> {
+                        containerView.imgMatchTrait2.setColorFilter(filter4)
                     }
                 }
                 when (list[3].tierCurrent) {
@@ -272,6 +282,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     3 -> {
                         containerView.imgMatchTrait3.setColorFilter(filter3)
                     }
+                    4 -> {
+                        containerView.imgMatchTrait3.setColorFilter(filter4)
+                    }
                 }
                 when (list[4].tierCurrent) {
                     1 -> {
@@ -284,6 +297,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     }
                     3 -> {
                         containerView.imgMatchTrait4.setColorFilter(filter3)
+                    }
+                    4 -> {
+                        containerView.imgMatchTrait4.setColorFilter(filter4)
                     }
                 }
                 when (list[5].tierCurrent) {
@@ -298,6 +314,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     3 -> {
                         containerView.imgMatchTrait5.setColorFilter(filter3)
                     }
+                    4 -> {
+                        containerView.imgMatchTrait5.setColorFilter(filter4)
+                    }
                 }
                 when (list[6].tierCurrent) {
                     1 -> {
@@ -311,6 +330,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     3 -> {
                         containerView.imgMatchTrait6.setColorFilter(filter3)
                     }
+                    4 -> {
+                        containerView.imgMatchTrait6.setColorFilter(filter4)
+                    }
                 }
                 when (list[7].tierCurrent) {
                     1 -> {
@@ -323,6 +345,9 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
                     }
                     3 -> {
                         containerView.imgMatchTrait7.setColorFilter(filter3)
+                    }
+                    4 -> {
+                        containerView.imgMatchTrait7.setColorFilter(filter4)
                     }
                 }
             }catch (e:IndexOutOfBoundsException){

@@ -176,9 +176,11 @@ class ProfileFragment : Fragment(R.layout.profile_fragment) {
     }
 
    private fun selectImgIcon(name: String): Int {
-        val resId: Int = this.getResources()
-            .getIdentifier("b"+name, "drawable", context!!.getPackageName())
-        return resId
+        val resId: Int = this.getResources().getIdentifier("b"+name, "drawable", context!!.getPackageName())
+       if(resId==0){
+           return R.drawable.b1010
+       }
+       return resId
 
     }
 }

@@ -13,6 +13,7 @@
     <color name="tier1">#FFF370</color>
     <color name="tier2">#88A9AE</color>
     <color name="tier3">#956421 </color>
+    <color name="tier4">#33F0FF </color>
     <color name="win">#0AD800   </color>
     <color name="lose">#D80000  </color>
     <color name="mid">#001AD8  </color>

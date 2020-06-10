@@ -729,5 +729,201 @@
       37,
       44
     ]
+  },
+  {
+    "name": "Nautilus",
+    "championId": "TFT3_Nautilus",
+    "cost": 2,
+    "traits": [
+      "Astro",
+      "Vanguard"
+    ],
+    "items": [
+      67,
+      36,
+      47
+    ]
+  },
+  {
+    "name": "Bard",
+    "championId": "TFT3_Bard",
+    "cost": 3,
+    "traits": [
+      "Astro",
+      "Mystic"
+    ],
+    "items": [
+      14,
+      15,
+      44
+    ]
+  },
+  {
+    "name": "Gnar",
+    "championId": "TFT3_Gnar",
+    "cost": 4,
+    "traits": [
+      "Astro",
+      "Brawler"
+    ],
+    "items": [
+      66,
+      69,
+      25
+    ]
+  },
+  {
+    "name": "Teemo",
+    "championId": "TFT3_Teemo",
+    "cost": 4,
+    "traits": [
+      "Astro",
+      "Sniper"
+    ],
+    "items": [
+      44,
+      15,
+      37
+    ]
+  },
+  {
+    "name": "Nocturne",
+    "championId": "TFT3_Nocturne",
+    "cost": 1,
+    "traits": [
+      "Battlecast",
+      "Infiltrator"
+    ],
+    "items": [
+      15,
+      19,
+      29
+    ]
+  },
+  {
+    "name": "Illaoi",
+    "championId": "TFT3_Illaoi",
+    "cost": 1,
+    "traits": [
+      "Battlecast",
+      "Brawler"
+    ],
+    "items": [
+      55,
+      35,
+      27
+    ]
+  },
+  {
+    "name": "KogMaw",
+    "championId": "TFT3_KogMaw",
+    "cost": 2,
+    "traits": [
+      "Battlecast",
+      "Blaster"
+    ],
+    "items": [
+      12,
+      23,
+      79
+    ]
+  },
+  {
+    "name": "Cassiopeia",
+    "championId": "TFT3_Cassiopeia",
+    "cost": 3,
+    "traits": [
+      "Battlecast",
+      "Mystic"
+    ],
+    "items": [
+      44,
+      34,
+      37
+    ]
+  },
+  {
+    "name": "Viktor",
+    "championId": "TFT3_Viktor",
+    "cost": 4,
+    "traits": [
+      "Battlecast",
+      "Sorcerer"
+    ],
+    "items": [
+      33,
+      15,
+      37
+    ]
+  },
+  {
+    "name": "Urgot",
+    "championId": "TFT3_Urgot",
+    "cost": 5,
+    "traits": [
+      "Battlecast",
+      "Protector"
+    ],
+    "items": [
+      69,
+      13,
+      14
+    ]
+  },
+  {
+    "name": "Zed",
+    "championId": "TFT3_Zed",
+    "cost": 2,
+    "traits": [
+      "Rebel",
+      "Infiltrator"
+    ],
+    "items": [
+      11,
+      16,
+      15
+    ]
+  },
+  {
+  "name": "Vayne",
+  "championId": "TFT3_Vayne",
+  "cost": 3,
+  "traits": [
+    "Cybernetic",
+    "Sniper"
+  ],
+  "items": [
+    19,
+    29,
+    79
+  ]
+  },
+  {
+    "name": "Riven",
+    "championId": "TFT3_Riven",
+    "cost": 4,
+    "traits": [
+      "Chrono",
+      "Blademaster"
+    ],
+    "items": [
+      15,
+      37,
+      44
+    ]
+  },
+  {
+    "name": "Janna",
+    "championId": "TFT3_Janna",
+    "cost": 5,
+    "traits": [
+      "Star Guardian",
+      "Paragon"
+    ],
+    "items": [
+      46,
+      46,
+      67
+    ]
   }
 ]

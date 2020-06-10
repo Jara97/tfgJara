@@ -463,5 +463,132 @@
     "damage":"350 / 450 / 2500",
     "shield":"0",
     "heal":"Duration: 6 / 8 / 2500"
+  },
+  {
+
+    "championId": "TFT3_Nautilus",
+    "name": "Impact Crater",
+    "description": "Nautilus erupts the ground beneath his target, knocking them up and stunning them, and dealing magic damage. Enemies adjacent to the target are also knocked up and stunned for half the duration and dealt half the damage.",
+    "damage":"100 / 200 / 400",
+    "shield":"0",
+    "heal":"Stun duration: 3 / 3.5 / 4"
+  },
+  {
+
+    "championId": "TFT3_Bard",
+    "name": "Traveller's Call",
+    "description": "Passive: Bard gains additional mana each attack. Active: Bard launches a meep onto his owner’s bench which can be sold for 1 XP.",
+    "damage":"0",
+    "shield":"0",
+    "heal":"Mana: 8 / 18 / 90"
+  },
+  {
+
+    "championId": "TFT3_Gnar",
+    "name": "GNAR!",
+    "description": "Gnar leaps towards his target and transforms into Mega Gnar, throwing nearby enemies, dealing damage and stunning them for 2 seconds. While in Mega Gnar form, Gnar gainsHealth and Attack Damage and becomes melee.",
+    "damage":"200 / 300 / 1500",
+    "shield":"0",
+    "heal":"Extra health: 750 / 1250 / 2500"
+  },
+  {
+
+    "championId": "TFT3_Teemo",
+    "name": "Satellite Traps",
+    "description": "Teemo scatters three traps around the nearest enemy. When an enemy is close to a trap or after 3 seconds it explodes, damaging nearby enemies, knocking them down, and massively slowing them for 4 seconds.",
+    "damage":"175 / 250 / 600",
+    "shield":"0",
+    "heal":"0"
+  },
+  {
+
+    "championId": "TFT3_Nocturne",
+    "name": "Unspeakable Horror",
+    "description": "Nocturne terrifies his target, stunning them with fear and dealing damage over the duration or until Nocturne dies.",
+    "damage":"200 / 250 / 400",
+    "shield":"0",
+    "heal":"Stun duration: 2 / 2.5 / 4"
+  },
+  {
+
+    "championId": "TFT3_Illaoi",
+    "name": "Tentacle Smash",
+    "description": "Illaoi slams a tentacle in a line in front of her, dealing damage and stealing Armor and Magic Resist from each target hit for 4 seconds.",
+    "damage":"125 / 200 / 325",
+    "shield":"0",
+    "heal":"Armor and Magic Resist: 15% / 25% / 40%"
+  },
+  {
+
+    "championId": "TFT3_KogMaw",
+    "name": "Barrage",
+    "description": "For 3 seconds Kog’Maw gains infinite Attack Range, 90% Attack Speed, and his attacks deal a percentage of the target's maximum health as magic damage.",
+    "damage":"0",
+    "shield":"0",
+    "heal":"Percent damage: 5% / 7% / 9%"
+  },
+  {
+
+    "championId": "TFT3_Cassiopeia",
+    "name": "Noxious Blast",
+    "description": "Cassiopeia launches her fangs at the nearest enemy that isn’t poisoned, causing them to take damage over 12 seconds, and reducing the effectiveness of shields used on them by 50%.",
+    "damage":"1000 / 1500 / 3000",
+    "shield":"0",
+    "heal":"0"
+  },
+  {
+
+    "championId": "TFT3_Viktor",
+    "name": "Death Ray",
+    "description": "Viktor burns a path between the two enemies whom are the farthest away from each other, initially dealing a percentage of max health damage, then 1 second later dealing damage in an aftershock explosion along the same path.",
+    "damage":"250 / 400 / 1000",
+    "shield":"0",
+    "heal":"Percent damage: 25% / 40% / 100%"
+  },
+  {
+
+    "championId": "TFT3_Urgot",
+    "name": "Fear Beyond Death",
+    "description": "Urgot fires a drill at the farthest enemy in his attack range, reeling them in and dealing true damage repeatedly until they die when they reach him and reducing his mana cost.",
+    "damage":"2000",
+    "shield":"0",
+    "heal":"Mana cost decrease: 10 / 20 / 60"
+  },
+  {
+
+    "championId": "TFT3_Zed",
+    "name": "Contempt for the Weak",
+    "description": "Every third attack, Zed deals bonus magic damage and steals a percentage of the target's current Attack Damage.",
+    "damage":"25 / 50 / 80",
+    "shield":"0",
+    "heal":"Damage stolen: 25% / 40% / 80%"
+  },
+  {
+
+    "championId": "TFT3_Vayne",
+    "name": "Final Hour",
+    "description": "Vayne focuses for 10 seconds, tumbling away from her target immediately and every third attack thereafter. Vayne is invisible while tumbling, and attacks after tumbling deal bonus damage.",
+    "damage":"0",
+    "shield":"0",
+    "heal":"Percent damage: 180% / 200% / 240%"
+  },
+  {
+
+    "championId": "TFT3_Riven",
+    "name": "Energy Slash",
+    "description": "Riven dashes and shields herself, then slashes forward dealing magic damage. Every third cast, Riven leaps into the air and launches a wave of energy that deals magic damage.",
+    "damage":"100 / 150 / 450",
+    "shield":"300 / 450 / 900",
+    "heal":"Secondary damage: 400 / 600 / 1800"
+  },
+  {
+
+    "championId": "TFT3_Janna",
+    "name": "Howling Gale",
+    "description": "Janna summons five tornados which fly forward in a large cone. Tornados grant allies they pass through attack speed for 5 seconds, while knocking up and stunning enemies for 1.5 seconds.",
+    "damage":"0",
+    "shield":"0",
+    "heal":"Attack speed: 50% / 100% / 500%"
   }
+
 ]

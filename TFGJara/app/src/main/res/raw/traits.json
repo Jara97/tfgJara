@@ -12,8 +12,13 @@
         "max": 5
       },
       {
-        "style": "gold",
+        "style": "silver",
         "efect": "55% Chance to trigger",
+        "min": 6
+      },
+      {
+        "style": "gold",
+        "efect": "100% Chance to trigger",
         "min": 6
       }
     ]
@@ -27,7 +32,7 @@
       {
         "style": "bronze",
         "min": 2,
-        "efect": "2 Additional Attacks",
+        "efect": "3 Additional Attacks",
         "max": 3
       },
       {
@@ -52,7 +57,7 @@
       {
         "style": "gold",
         "min": 4,
-        "efect": "750 Bonus Health"
+        "efect": "550 Bonus Health"
       }
     ]
   },
@@ -71,38 +76,36 @@
       {
         "style": "silver",
         "min": 4,
-        "efect": "30% Healing",
+        "efect": "35% Healing",
         "max": 5
       },
       {
         "style": "gold",
         "min": 6,
-        "efect": "60% Healing"
+        "efect": "80% Healing"
       }
     ]
   },
   {
     "key": "Chrono",
     "name": "Chrono",
-    "description": "All allies gain attack speed every few seconds.",
+    "description": "All allies gain 15% Attack Speed.",
     "type": "origin",
     "sets": [
       {
         "style": "bronze",
         "min": 2,
-        "efect": "10% Attack Speed",
-        "max": 3
+        "efect": "Every 8 seconds"
       },
       {
         "style": "silver",
         "min": 4,
-        "efect": "35% Attack Speed",
-        "max": 5
+        "efect": "Every 3.5 seconds"
       },
       {
         "style": "gold",
         "min": 6,
-        "efect": "70% Attack Speed"
+        "efect": "Every 1.5 seconds"
       }
     ]
   },
@@ -121,26 +124,30 @@
       {
         "style": "gold",
         "min": 6,
-        "efect": "800 Health & 80 Attack Damage"
+        "efect": "550 Health & 55 Attack Damage"
       }
     ]
   },
   {
     "key": "DarkStar",
     "name": "Dark Star",
-    "description": "When a Dark Star champion dies they give increased damage, plus any previous stacks of this effect, to the nearest ally Dark Star champion.",
+    "description": "When an ally dies, all allied Dark Star Champions gain increased damage.",
     "type": "origin",
     "sets": [
       {
         "style": "bronze",
-        "min": 3,
-        "efect": "35% Damage Increase",
-        "max": 5
+        "min": 2,
+        "efect": "8 Attack Damage and Spell Power"
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "efect": "18 Attack Damage and Spell Power"
       },
       {
         "style": "gold",
         "min": 6,
-        "efect": "80% Damage Increase"
+        "efect": "30 Attack Damage and Spell Power"
       }
     ]
   },
@@ -167,32 +174,31 @@
       {
         "style": "bronze",
         "min": 2,
-        "efect": "50% Bonus Attack Speed",
+        "efect": "50% Bonus Attack Speed. Refreshes on Takedown.",
         "max": 3
       },
       {
-        "style": "gold",
+        "style": "silver",
         "min": 4,
-        "efect": "80% Bonus Attack Speed. Refreshes on Takedown."
+        "efect": "75% Bonus Attack Speed. Refreshes on Takedown."
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "120% Bonus Attack Speed. Refreshes on Takedown."
       }
     ]
   },
   {
     "key": "ManaReaver",
     "name": "ManaReaver",
-    "description": "Mana-Reavers' Basic Attacks increase the mana cost of their target's next spellcast by a percentage.",
+    "description": "Mana-Reaver's Basic Attacks increase the Mana cost of their target's next spellcast by 40%.",
     "type": "class",
     "sets": [
       {
-        "style": "bronze",
-        "min": 2,
-        "efect": "First Attack each Combat",
-        "max": 3
-      },
-      {
         "style": "gold",
-        "min": 4,
-        "efect": "All Attacks"
+        "min": 2,
+        "efect": ""
       }
     ]
   },
@@ -212,13 +218,26 @@
   {
     "key": "Mercenary",
     "name": "Mercenary",
-    "innate": "Upgrades for Mercenaries' spells have a chance to appear in the shop.",
+    "description": "Upgrades for Mercenaries' spells have a chance to appear in the shop.",
     "type": "class",
     "sets": [
       {
         "style": "gold",
         "min": 1,
-        "efect": "30% Chance to trigger"
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Paragon",
+    "name": "Paragon",
+    "description": "Basic attacks from Star Guardian allies deal true damage. Attacks from all other allies deal magic damage.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1,
+        "efect": ""
       }
     ]
   },
@@ -231,13 +250,13 @@
       {
         "style": "bronze",
         "min": 2,
-        "efect": "30 Magic Resistance",
+        "efect": "40 Magic Resistance",
         "max": 3
       },
       {
         "style": "gold",
         "min": 4,
-        "efect": "120 Magic Resistance"
+        "efect": "105 Magic Resistance"
       }
     ]
   },
@@ -250,13 +269,18 @@
       {
         "style": "bronze",
         "min": 2,
-        "efect": "20% Maximum Health Shield",
+        "efect": "25% Maximum Health Shield",
         "max": 3
       },
       {
-        "style": "gold",
+        "style": "silver",
         "min": 4,
         "efect": "35% Maximum Health Shield"
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "40% Maximum Health Shield"
       }
     ]
   },
@@ -273,9 +297,14 @@
         "max": 5
       },
       {
-        "style": "gold",
+        "style": "silver",
         "min": 6,
-        "efect": "225 Shield & 12% Damage"
+        "efect": "210 Shield & 12% Damage"
+      },
+      {
+        "style": "gold",
+        "min": 9,
+        "efect": "330 Shield & 15% Damage"
       }
     ]
   },
@@ -286,9 +315,14 @@
     "type": "class",
     "sets": [
       {
-        "style": "gold",
+        "style": "bronze",
         "min": 2,
-        "efect": ""
+        "efect": "12% Increased Damage per hex"
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "efect": "30% Increased Damage per hex"
       }
     ]
   },
@@ -313,7 +347,7 @@
       {
         "style": "gold",
         "min": 6,
-        "efect": "80% Spell Power"
+        "efect": "75% Spell Power"
       }
     ]
   },
@@ -332,7 +366,7 @@
       {
         "style": "gold",
         "min": 4,
-        "efect": "50% for 1 Gold and 15% for a component item"
+        "efect": "50% for 1 Gold and 25% for a component item"
       }
     ]
   },
@@ -349,9 +383,14 @@
         "max": 5
       },
       {
-        "style": "gold",
+        "style": "silver",
         "min": 6,
-        "efect": "60 Total Mana"
+        "efect": "50 Total Mana"
+      },
+      {
+        "style": "gold",
+        "min": 9,
+        "efect": "70 Total Mana"
       }
     ]
   },
@@ -390,13 +429,18 @@
       {
         "style": "bronze",
         "min": 2,
-        "efect": "60 Armor",
+        "efect": "125 Armor",
         "max": 3
       },
       {
-        "style": "gold",
+        "style": "silver",
         "min": 4,
         "efect": "250 Armor"
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "500 Armor"
       }
     ]
   },
@@ -410,6 +454,42 @@
         "style": "gold",
         "min": 3,
         "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Astro",
+    "name": "Astro",
+    "description": "Astros have 30 reduced mana cost.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3,
+        "efect": ""
+      }
+    ]
+  },
+  {
+    "key": "Battlecast",
+    "name": "Battlecast",
+    "description": "Upon dealing or taking 10 instances of damage, Battlecast champions heal if below half health or deal damage to the nearest enemy if above half health.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "efect": "75 Healing or Damage"
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "efect": "150 Healing or Damage"
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "efect": "250 Healing or Damage"
       }
     ]
   }

@@ -176,11 +176,15 @@ class CompBuilderFragment : Fragment(R.layout.compbuilder_fragment) {
     private fun setTraitColor(view: ImageView, i: Int, list: List<Pair<String, Int>>) {
 
         val filter3: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier1), resources.getColor(R.color.background))
-        val filter2: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier2), resources.getColor(R.color.tier2))
-        val filter1: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier3), resources.getColor(R.color.tier3))
+        val filter2: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier2), resources.getColor(R.color.background))
+        val filter1: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier3), resources.getColor(R.color.background))
+        val filter4: ColorFilter = LightingColorFilter(resources.getColor(R.color.tier4), resources.getColor(R.color.background))
 
         if(list[i].second==1&&viewModel.getChampionTrait(list[i].first).sets[0].min==list[i].second){
             view.setColorFilter(filter3)
+        }
+        else if(list[i].first.toLowerCase().equals("chrono")&&list[i].second==8){
+            view.setColorFilter(filter4)
         }
         else if(viewModel.getChampionTrait(list[i].first).sets.size==3&&viewModel.getChampionTrait(list[i].first).sets[2].min<=list[i].second){
             view.setColorFilter(filter3)
@@ -189,6 +193,12 @@ class CompBuilderFragment : Fragment(R.layout.compbuilder_fragment) {
             view.setColorFilter(filter2)
         }
         else if(viewModel.getChampionTrait(list[i].first).sets.size==2&&viewModel.getChampionTrait(list[i].first).sets[1].min<=list[i].second){
+            view.setColorFilter(filter3)
+        }
+        else if(list[i].first.toLowerCase().equals("chrono")&&(list[i].second==4||list[i].second==5)){
+            view.setColorFilter(filter2)
+        }
+        else if(list[i].first.toLowerCase().equals("chrono")&&(list[i].second==6||list[i].second==7)){
             view.setColorFilter(filter3)
         }
         else{
