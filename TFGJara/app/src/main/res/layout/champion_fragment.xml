@@ -46,7 +46,7 @@
             android:layout_marginTop="48dp"
             android:text="TextView"
             android:textColor="@color/traitEfects"
-            android:textSize="20dp"
+            android:textSize="26dp"
             app:layout_constraintBottom_toTopOf="@+id/lblCSkillDescription"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +114,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             android:textColor="@color/traitEfects"
-            android:textSize="20dp"
+            android:textSize="26dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblCSkillHeal" />
@@ -139,7 +139,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             android:textColor="@color/traitEfects"
-            android:textSize="20dp"
+            android:textSize="26dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblCTrait1Efect" />
@@ -164,7 +164,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             android:textColor="@color/traitEfects"
-            android:textSize="20dp"
+            android:textSize="26dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblCTraitEfect2" />
@@ -233,7 +233,7 @@
             android:layout_marginTop="8dp"
             android:text="Suggested Build"
             android:textColor="@color/traitEfects"
-            android:textSize="20dp"
+            android:textSize="26dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lblCTraitEfect3" />

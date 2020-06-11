@@ -71,11 +71,11 @@
   {
    
     "championId": "TFT3_Ekko",
-    "name": "Dreadnova Guillotine",
-    "description": "Darius dunks an enemy, dealing magic damage. If this kills the target, Darius immediately casts again. Targets below 50% health take double damage.",
-    "damage":"400 / 500 / 750",
+    "name": "Chronobreak",
+    "description": "Ekko shatters the timeline, freezing all units in time before attacking enemies with bonus magic damage, applying on-hit effects, and reducing Attack Speed by 50% for 7 seconds. Ekko cannot die while he has stopped time.",
+    "damage":"100 / 200 / 2000",
     "shield":"0",
-    "heal":"0"
+    "heal":"Number of Hits: 5 / 7 / 20"
   },
   {
     

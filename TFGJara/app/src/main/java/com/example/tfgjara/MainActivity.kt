@@ -129,9 +129,9 @@ class MainActivity : AppCompatActivity(){
     private fun setBottonNavigationView() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.mnu1 -> navController.navigate(R.id.mainNavigation)
+                R.id.mnu1 -> { navController.navigate(R.id.mainNavigation) ; setupAppBar()  }
                 R.id.mnu2 -> { navController.navigate(R.id.itemsNavigation) ; setupAppBar() }
-                R.id.mnu3 -> { navController.navigate(R.id.compBuilderNavigation); setupAppBar() }
+                R.id.mnu3 -> { navController.navigate(R.id.compBuilderNavigation) ; setupAppBar() }
                 else -> true
             }
             true

@@ -72,7 +72,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
                 DividerItemDecoration(context, RecyclerView.VERTICAL).apply { setDrawable(context.getDrawable(R.drawable.divider)!!) })
             adapter = listAdapter
         }
-        listAdapter.submitList(viewModel.getChampions())
+        listAdapter.submitList(viewModel.getChampions().sortedBy { x->x.name })
     }
 
     private fun setListeners() {

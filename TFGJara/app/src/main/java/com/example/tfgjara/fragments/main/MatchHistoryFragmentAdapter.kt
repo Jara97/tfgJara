@@ -569,8 +569,10 @@ class MatchHistoryFragmentAdapter : RecyclerView.Adapter<MatchHistoryFragmentAda
         }
 
         fun selectImgPet(name: String): Int {
-            val resId: Int = containerView.getResources()
-                .getIdentifier(name.toLowerCase().replace("pet",""), "drawable", containerView.context.getPackageName())
+            val resId: Int = containerView.getResources().getIdentifier(name.toLowerCase().replace("pet",""), "drawable", containerView.context.getPackageName())
+            if(resId==0){
+                return R.drawable.tftavatar
+            }
             return resId
         }
 
