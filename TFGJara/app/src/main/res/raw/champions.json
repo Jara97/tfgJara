@@ -18,7 +18,7 @@
     "championId": "TFT3_Annie",
     "cost": 2,
     "traits": [
-        "Mech-Pilot",
+        "MechPilot",
         "Sorcerer"
     ],
     "items": [
@@ -103,7 +103,7 @@
     "cost": 2,
     "traits": [
         "Space Pirate",
-        "Mana-Reaver"
+        "ManaReaver"
     ],
     "items": [
       55,
@@ -158,7 +158,7 @@
     "championId": "TFT3_Fizz",
     "cost": 4,
     "traits": [
-        "Mech-Pilot",
+        "MechPilot",
         "Infiltrator"
     ],
     "items": [
@@ -202,7 +202,7 @@
     "cost": 4,
     "traits": [
         "Cybernetic",
-        "Mana-Reaver",
+        "ManaReaver",
         "Blademaster"
     ],
     "items": [
@@ -301,7 +301,7 @@
     "cost": 3,
     "traits": [
         "Celestial",
-        "Mana-Reaver"
+        "ManaReaver"
     ],
     "items": [
       55,
@@ -497,7 +497,7 @@
     "championId": "TFT3_Rumble",
     "cost": 3,
     "traits": [
-        "Mech-Pilot",
+        "MechPilot",
         "Demolitionist"
     ],
     "items": [
@@ -582,7 +582,7 @@
     "cost": 5,
     "traits": [
         "Chrono",
-        "Mana-Reaver"
+        "ManaReaver"
     ],
     "items": [
       14,

@@ -1,21 +1,11 @@
 package com.example.tfgjara.fragments.main
 
-import android.content.DialogInterface
-import android.content.pm.ActivityInfo
-import android.graphics.Color
 import android.os.Bundle
-import android.view.View
-import android.widget.EditText
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -23,13 +13,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tfgjara.MainActivityViewModel
 import com.example.tfgjara.R
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_fragment.*
-import java.util.*
+
 
 class MainFragment : Fragment(R.layout.main_fragment) {
 
     private val viewModel: MainActivityViewModel by activityViewModels()
+    private var currentVisiblePosition:Long = 0;
+
 
     private val navController: NavController by lazy {
        findNavController()
@@ -40,11 +31,6 @@ class MainFragment : Fragment(R.layout.main_fragment) {
             viewModel.selectChampion(it)
             navController.navigate(R.id.championNavigation)
         }
-    }
-
-
-    companion object {
-        fun newInstance() = MainFragment()
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -59,9 +45,9 @@ class MainFragment : Fragment(R.layout.main_fragment) {
     private fun setupViews() {
         (requireActivity() as AppCompatActivity).supportActionBar?.run {
             setTitle(R.string.main_title)
-
         }
     }
+
 
     private fun setupRecyclerView() {
         lstC.run {
@@ -73,6 +59,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
             adapter = listAdapter
         }
         listAdapter.submitList(viewModel.getChampions().sortedBy { x->x.name })
+        viewModel.setSort(1)
     }
 
     private fun setListeners() {

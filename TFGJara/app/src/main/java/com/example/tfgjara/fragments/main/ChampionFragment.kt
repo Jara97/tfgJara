@@ -89,7 +89,7 @@ class ChampionFragment : Fragment(R.layout.champion_fragment) {
             lblCSkillShield.visibility=View.GONE
         }
         else{
-            lblCSkillShield.text="Shield:  "+c.damage
+            lblCSkillShield.text="Shield:  "+c.shield
         }
         if(c.heal.equals("0")){
             lblCSkillHeal.visibility=View.GONE
