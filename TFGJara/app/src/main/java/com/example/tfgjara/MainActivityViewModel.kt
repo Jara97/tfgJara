@@ -31,9 +31,8 @@ import java.lang.reflect.Type
 
 class MainActivityViewModel : ViewModel() {
 
-    //private lateinit var  repository: LocalRepository
 
-    private val apikey:String="RGAPI-17a03590-66da-487a-8a88-1f7c620bfb43"
+    private val apikey:String="RGAPI-2da13975-52f0-400d-9345-815d96b5a97d"
     private val r4J = R4J(APICredentials(apikey))
 
     private val gson: Gson =Gson()

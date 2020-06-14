@@ -19,7 +19,6 @@ import kotlinx.android.synthetic.main.main_fragment.*
 class MainFragment : Fragment(R.layout.main_fragment) {
 
     private val viewModel: MainActivityViewModel by activityViewModels()
-    private var currentVisiblePosition:Long = 0;
 
 
     private val navController: NavController by lazy {
