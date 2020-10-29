@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toStartOf="@+id/lblProfileName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/b18" />
+        app:srcCompat="@drawable/b1010" />
 
     <TextView
         android:id="@+id/lblProfileName"

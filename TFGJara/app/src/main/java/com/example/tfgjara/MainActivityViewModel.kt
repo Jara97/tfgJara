@@ -32,7 +32,7 @@ import java.lang.reflect.Type
 class MainActivityViewModel : ViewModel() {
 
 
-    private val apikey:String="RGAPI-2da13975-52f0-400d-9345-815d96b5a97d"
+    private val apikey:String="RGAPI-61b972e0-50af-4cc4-88fc-ea5964406b61"
     private val r4J = R4J(APICredentials(apikey))
 
     private val gson: Gson =Gson()
@@ -300,7 +300,10 @@ class MainActivityViewModel : ViewModel() {
 
     fun getGame():List<TFTParticipant>{
         return actualGame
+
     }
+
+
 
 
 }
